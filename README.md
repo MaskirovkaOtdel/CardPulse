@@ -1,5 +1,6 @@
 # ⚡ CardPulse (Community Edition)
 
+[![CI](https://github.com/MaskirovkaOtdel/CardPulse/actions/workflows/ci.yml/badge.svg)](https://github.com/MaskirovkaOtdel/CardPulse/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Node: >=20](https://img.shields.io/badge/node-%3E%3D20-brightgreen.svg)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue.svg)](https://www.typescriptlang.org/)

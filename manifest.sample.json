@@ -1,0 +1,45 @@
+[
+  {
+    "title": "AntiGravity 2.0: High-Throughput Media Tech Architecture Blueprint",
+    "category": "Tech",
+    "author": "Dr. Sarah Chen",
+    "readTime": "6 min read",
+    "date": "2026-09-24",
+    "theme": "dark"
+  },
+  {
+    "title": "Global Tech Markets Rally as Quantum Chiplet Mass Production Commences",
+    "category": "Breaking News",
+    "author": "Alex Rivera",
+    "readTime": "4 min read",
+    "date": "2026-09-24",
+    "theme": "dark",
+    "template": "breaking-news"
+  },
+  {
+    "title": "Simplicity is the prerequisite for reliability, speed, and long-term architectural longevity.",
+    "category": "Opinion",
+    "author": "Marcus Aurelius",
+    "readTime": "2 min read",
+    "theme": "dark",
+    "template": "quote-card"
+  },
+  {
+    "title": "Deep Dive: Building Distributed Low-Latency Edge Runtimes with WebAssembly",
+    "category": "Engineering",
+    "author": "Elena Rostova",
+    "readTime": "45 min listen",
+    "episode": "88",
+    "theme": "midnight",
+    "template": "podcast-episode"
+  },
+  {
+    "title": "The Evolution of Digital Editorial Publishing and Programmatic Integrity in 2026",
+    "category": "Culture",
+    "author": "Jonathan Vance",
+    "readTime": "8 min read",
+    "date": "2026-09-23",
+    "theme": "light",
+    "template": "minimal-editorial"
+  }
+]

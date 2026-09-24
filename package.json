@@ -1,0 +1,50 @@
+{
+  "name": "cardpulse",
+  "version": "2.0.0",
+  "description": "High-performance Dynamic OpenGraph & Social Card Synthesis Platform in TypeScript (Satori + Sharp)",
+  "type": "module",
+  "license": "MIT",
+  "author": "MaskirovkaOtdel <thod.efstathiadis@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaskirovkaOtdel/CardPulse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MaskirovkaOtdel/CardPulse/issues"
+  },
+  "homepage": "https://github.com/MaskirovkaOtdel/CardPulse#readme",
+  "keywords": [
+    "opengraph",
+    "social-cards",
+    "satori",
+    "sharp",
+    "fastify",
+    "yoga-flexbox",
+    "webp",
+    "image-generation"
+  ],
+  "scripts": {
+    "dev": "tsx watch cmd/server.ts",
+    "start": "tsx cmd/server.ts",
+    "build": "tsc",
+    "cli": "tsx cmd/cli.ts",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "benchmark": "vitest run tests/benchmark.test.ts"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.2",
+    "@resvg/resvg-js": "^2.6.2",
+    "@resvg/resvg-wasm": "^2.6.2",
+    "fastify": "^5.2.1",
+    "satori": "^0.12.1",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "@vitest/coverage-v8": "^3.2.7",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
+  }
+}

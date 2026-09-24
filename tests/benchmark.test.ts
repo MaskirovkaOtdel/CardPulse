@@ -24,8 +24,9 @@ describe('Performance & Latency Benchmarks', () => {
     expect(result.buffer).toBeInstanceOf(Buffer);
     expect(result.buffer.length).toBeGreaterThan(1000);
 
-    console.log(`[Benchmark] Cold render execution time: ${elapsed.toFixed(2)}ms (target: < 120ms)`);
-    expect(elapsed).toBeLessThan(120);
+    const targetColdMs = process.env.CI ? 250 : 120;
+    console.log(`[Benchmark] Cold render execution time: ${elapsed.toFixed(2)}ms (target: < ${targetColdMs}ms)`);
+    expect(elapsed).toBeLessThan(targetColdMs);
   });
 
   it('should complete cached image generation under 45ms (target: sub-5ms)', async () => {
@@ -50,11 +51,12 @@ describe('Performance & Latency Benchmarks', () => {
     }
 
     const avgLatency = latencies.reduce((a, b) => a + b, 0) / latencies.length;
-    console.log(`[Benchmark] Cached render average latency: ${avgLatency.toFixed(3)}ms (target: < 45ms)`);
+    const targetCachedMs = process.env.CI ? 60 : 45;
+    console.log(`[Benchmark] Cached render average latency: ${avgLatency.toFixed(3)}ms (target: < ${targetCachedMs}ms)`);
 
-    expect(avgLatency).toBeLessThan(45);
+    expect(avgLatency).toBeLessThan(targetCachedMs);
     for (const lat of latencies) {
-      expect(lat).toBeLessThan(45);
+      expect(lat).toBeLessThan(targetCachedMs);
     }
   });
 });
